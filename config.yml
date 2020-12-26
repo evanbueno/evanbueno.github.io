@@ -1,0 +1,43 @@
+baseURL: "http://evanbueno.github.io/"
+languageCode: "en-us"
+title: "me"
+theme: "hugo-PaperMod"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+params:
+    title: evan bueno
+    description: "evan bueno's website"
+    author: "evan bueno"
+    # author: ["Me", "You"] # multiple authors
+
+    ShowReadingTime: false
+    ShowShareButtons: false
+    comments: false
+    defaultTheme: dark
+    disableThemeToggle: false
+    disableSpecial1stPost: false
+
+    assets:
+        favicon: "https://twemoji.maxcdn.com/2/svg/1f30e.svg"
+
+    # profile-mode
+    profileMode:
+        enabled: true # needs to be explicitly set
+        title: evan bueno
+        imageUrl: 'https://cdn.discordapp.com/attachments/785626540611731466/792122238844534804/output-onlinepngtools2.png'
+        imageTitle: me pogchamp
+        buttons:
+            - name: about
+              url: about
+
+    socialIcons:
+        - name: github
+          url: "https://github.com/biune"
+        - name: stackoverflow
+          url: "https://stackoverflow.com/users/14889355/biune"
+        - name: twitch
+          url: "https://twitch.tv/thy90d"
