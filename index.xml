@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>me</title>
-    <link>www.evanbueno.com/</link>
+    <link>evanbueno.github.io/</link>
     <description>Recent content on me</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="www.evanbueno.com/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="evanbueno.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>about</title>
-      <link>www.evanbueno.com/about/</link>
+      <link>evanbueno.github.io/about/</link>
       <pubDate>Fri, 25 Dec 2020 22:42:30 -0600</pubDate>
       
-      <guid>www.evanbueno.com/about/</guid>
+      <guid>evanbueno.github.io/about/</guid>
       <description>idk, im really techy i guess.</description>
     </item>
     
