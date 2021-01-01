@@ -6,18 +6,19 @@
     <description>Recent content on me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Dec 2020 15:08:46 -0600</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 31 Dec 2020 15:08:46 -0600</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Minecraft Script</title>
       <link>/pages/minecraft-script/</link>
-      <pubDate>Tue, 29 Dec 2020 15:08:46 -0600</pubDate>
+      <pubDate>Thu, 31 Dec 2020 15:08:46 -0600</pubDate>
       
       <guid>/pages/minecraft-script/</guid>
       <description>GitHub: https://github.evanbueno.com
 
- about: I am currently in the works of creating a minecraft script for easy and fast mangment of minecraft servers using shell.
-Features include:
- delete a world (rm) backup something (using zip (world/config/whole server)) install a minecraft server | COMING SOON create a start.sh file (for easy usage) startup a server (requires start.sh) | COMING SOON run a server in screen | COMING SOON   updates: Dec 29: added the delete world feature!</description>
+ About I am currently in the works of creating a minecraft script for easy and fast mangment of minecraft servers using bash.
+Features  Create Minecraft Server Backup Server (in the works) Create a start.sh File (in the works) Delete World(s) (in the works) Startup Server (in the works)  Code
+ Code Main Script: minecraft.sh
+#!/bin/bash if [ &amp;quot;$EUID&amp;quot; -ne 0 ]; then echo &amp;quot;Please run the script as root.</description>
     </item>
     
     <item>

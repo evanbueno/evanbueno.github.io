@@ -10,9 +10,10 @@
 <meta name="keywords" content="" />
 <meta name="description" content="GitHub: https://github.evanbueno.com
 
- about: I am currently in the works of creating a minecraft script for easy and fast mangment of minecraft servers using shell.
-Features include:
- delete a world (rm) backup something (using zip (world/config/whole server)) install a minecraft server | COMING SOON create a start.sh file (for easy usage) startup a server (requires start.sh) | COMING SOON run a server in screen | COMING SOON   updates: Dec 29: added the delete world feature!">
+ About I am currently in the works of creating a minecraft script for easy and fast mangment of minecraft servers using bash.
+Features  Create Minecraft Server Backup Server (in the works) Create a start.sh File (in the works) Delete World(s) (in the works) Startup Server (in the works)  Code
+ Code Main Script: minecraft.sh
+#!/bin/bash if [ &quot;$EUID&quot; -ne 0 ]; then echo &quot;Please run the script as root.">
 <meta name="author" content="evan bueno">
 <link rel="canonical" href="/pages/minecraft-script/" />
 <link href="/assets/css/stylesheet.min.c67f61ce2add05cf1690a03e10f394ed97d680c36fc4d7e53203318142a5ab6c.css" integrity="sha256-xn9hzirdBc8WkKA&#43;EPOU7ZfWgMNvxNflMgMxgUKlq2w=" rel="preload stylesheet"
@@ -25,26 +26,28 @@ Features include:
 <link rel="mask-icon" href="safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.79.1" />
+<meta name="generator" content="Hugo 0.80.0" />
 
 
 <meta property="og:title" content="Minecraft Script" />
 <meta property="og:description" content="GitHub: https://github.evanbueno.com
 
- about: I am currently in the works of creating a minecraft script for easy and fast mangment of minecraft servers using shell.
-Features include:
- delete a world (rm) backup something (using zip (world/config/whole server)) install a minecraft server | COMING SOON create a start.sh file (for easy usage) startup a server (requires start.sh) | COMING SOON run a server in screen | COMING SOON   updates: Dec 29: added the delete world feature!" />
+ About I am currently in the works of creating a minecraft script for easy and fast mangment of minecraft servers using bash.
+Features  Create Minecraft Server Backup Server (in the works) Create a start.sh File (in the works) Delete World(s) (in the works) Startup Server (in the works)  Code
+ Code Main Script: minecraft.sh
+#!/bin/bash if [ &quot;$EUID&quot; -ne 0 ]; then echo &quot;Please run the script as root." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/pages/minecraft-script/" />
-<meta property="article:published_time" content="2020-12-29T15:08:46-06:00" />
-<meta property="article:modified_time" content="2020-12-29T15:08:46-06:00" /><meta property="og:site_name" content="evan bueno" />
+<meta property="article:published_time" content="2020-12-31T15:08:46-06:00" />
+<meta property="article:modified_time" content="2020-12-31T15:08:46-06:00" /><meta property="og:site_name" content="evan bueno" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Minecraft Script"/>
 <meta name="twitter:description" content="GitHub: https://github.evanbueno.com
 
- about: I am currently in the works of creating a minecraft script for easy and fast mangment of minecraft servers using shell.
-Features include:
- delete a world (rm) backup something (using zip (world/config/whole server)) install a minecraft server | COMING SOON create a start.sh file (for easy usage) startup a server (requires start.sh) | COMING SOON run a server in screen | COMING SOON   updates: Dec 29: added the delete world feature!"/>
+ About I am currently in the works of creating a minecraft script for easy and fast mangment of minecraft servers using bash.
+Features  Create Minecraft Server Backup Server (in the works) Create a start.sh File (in the works) Delete World(s) (in the works) Startup Server (in the works)  Code
+ Code Main Script: minecraft.sh
+#!/bin/bash if [ &quot;$EUID&quot; -ne 0 ]; then echo &quot;Please run the script as root."/>
 
 <script type="application/ld+json">
 {
@@ -52,15 +55,15 @@ Features include:
   "@type": "BlogPosting",
   "headline": "Minecraft Script",
   "name": "Minecraft Script",
-  "description": "GitHub: https://github.evanbueno.com\n\n about: I am currently in the works of creating a minecraft script for easy and fast mangment of minecraft servers using shell.\nFeatures …",
+  "description": "GitHub: https://github.evanbueno.com\n\n About I am currently in the works of creating a minecraft script for easy and fast mangment of minecraft servers using bash.\nFeatures  Create …",
   "keywords": [
     
   ],
-  "articleBody": "GitHub: https://github.evanbueno.com\n\n about: I am currently in the works of creating a minecraft script for easy and fast mangment of minecraft servers using shell.\nFeatures include:\n delete a world (rm) backup something (using zip (world/config/whole server)) install a minecraft server | COMING SOON create a start.sh file (for easy usage) startup a server (requires start.sh) | COMING SOON run a server in screen | COMING SOON   updates: Dec 29: added the delete world feature! // added a backup feature!\nDec 30: added the start.sh creator feature!\n",
-  "wordCount" : "86",
+  "articleBody": "GitHub: https://github.evanbueno.com\n\n About I am currently in the works of creating a minecraft script for easy and fast mangment of minecraft servers using bash.\nFeatures  Create Minecraft Server Backup Server (in the works) Create a start.sh File (in the works) Delete World(s) (in the works) Startup Server (in the works)  Code\n Code Main Script: minecraft.sh\n#!/bin/bash if [ \"$EUID\" -ne 0 ]; then echo \"Please run the script as root.\" exit fi clear echo \"We are installing the required packages to run the script.\" sudo apt-get -y install zip unzip dialog 2/dev/null /dev/null clear HEIGHT=15 WIDTH=40 CHOICE_HEIGHT=5 BACKTITLE=\"Verison: 1.0 Alpha Build\" TITLE=\"Minecraft Script\" MENU=\"Choose one of the following options:\" OPTIONS=(1 \"Create Minecraft Server\" 2 \"Backup Server\" 3 \"Create a start.sh File\" 4 \"Delete World\" 5 \"Startup Server\") CHOICE=$(dialog --clear \\ --backtitle \"$BACKTITLE\" \\ --title \"$TITLE\" \\ --menu \"$MENU\" \\ $HEIGHT $WIDTH $CHOICE_HEIGHT \\ \"${OPTIONS[@]}\" \\ 2\u00261 /dev/tty) case $CHOICE in 1) clear echo \"WARNING: This installs other script from the repository that you got this from!\" read -r -p \"Do you wish to proceed? (type anything to continue or type control-c to cancel): \" mkdir minecraft-scripts cd minecraft-scripts rm -rf create-minecraft-server.sh wget https://raw.githubusercontent.com/Biune/minecraft-script/main/features/create-minecraft-server.sh chmod +x create-minecraft-server.sh ./create-minecraft-server.sh ;; 2) clear echo \"WARNING: This installs other script from the repository that you got this from!\" read -r -p \"Do you wish to proceed? (type anything to continue or type control-c to cancel): \" ;; 3) clear echo \"WARNING: This installs other script from the repository that you got this from!\" read -r -p \"Do you wish to proceed? (type anything to continue or type control-c to cancel): \" ;; 4) clear echo \"WARNING: This installs other script from the repository that you got this from!\" read -r -p \"Do you wish to proceed? (type anything to continue or type control-c to cancel): \" ;; 5) clear echo \"WARNING: This installs other script from the repository that you got this from!\" read -r -p \"Do you wish to proceed? (type anything to continue or type control-c to cancel): \" ;; esac Feature Scripts Create Minecraft Server: create-minecraft-server.sh\n#!/bin/bash cd .. clear echo \"This creates a minecraft server from scratch. This is only meant for people that don't have ANY server files.\" echo \"To continue press ENTER.\" read -r clear echo \"Some things needed before you start. 1. Download link to the server .jar to start the setup! 2. At least 1 GB of RAM to use for the Minecraft Server. 3. Basic Understanding of How to Setup a Minecraft Server\" echo \"Do you meet the requirements?\" read -r -p \"Type y/N: \" requirements if [ \"$requirements\" == \"Y\" ] || [ \"$requirements\" == \"y\" ]; then sleep 0 else echo \"Come back when you meet the requirements!\" sleep 1.5 $(./minecraft.sh) fi clear mkdir minecraft-server cd minecraft-server read -r -p \"Enter the download link for the server.jar file: \" server_jar_web echo \"If this part fails then the download link doesn't work.\" sleep 1.5 clear wget \"$server_jar_web\" echo \"Did it work?\" read -r -p \"Type y/N: \" did_it_work if [ \"$did_it_work\" == Y ] || [ \"$did_it_work\" == y ]; then sleep 0 else echo \"That's not good. Try again later.\" exit fi echo \"Perfect. Finding the .jar server file saved.\" server_jar_name=$(find -name *.jar) echo \"Do you want to rename $server_jar_name?\" read -r -p \"Type y/N: \" rename_question if [ \"$rename_question\" == Y ] || [ \"$rename_question\" == y ]; then echo \"What do you want to rename the file to?\" read -r -p \"Type here: \" rename mv \"$server_jar_name\" \"$rename\" server_jar_name=\"$rename\" else echo \"Not renaming.\" fi clear echo \"What is the maximum ammount of ram do you want to be used when running the server?\" read -r -p \"Enter the number in gigabytes: \" ram_gb if [ -n \"$ram_gb\" ] \u0026\u0026 [ \"$ram_gb\" -eq \"$ram_gb\" ] 2/dev/null; then sleep 0 else echo \"Enter a whole number above 0 or a real number.\" exit fi echo \"Got it!\" echo \"Creating start.sh.\" sudo touch start.sh sudo chmod a+x start.sh echo \"Writing: \" echo \"#!/bin/bash java -Xms\"$ram_gb\"G -Xmx\"$ram_gb\"G -jar \"$server_jar_name\"\" | sudo tee start.sh sudo chmod +x start.sh echo \"Start.sh created, starting up the server for the first time!\" clear ./start.sh clear echo \"Editing eula.txt.\" sleep 1.75 nano eula.txt echo \"Starting up the server again.\" sleep 2 ./start.sh ",
+  "wordCount" : "712",
   "inLanguage": "en",
-  "datePublished": "2020-12-29T15:08:46-06:00",
-  "dateModified": "2020-12-29T15:08:46-06:00",
+  "datePublished": "2020-12-31T15:08:46-06:00",
+  "dateModified": "2020-12-31T15:08:46-06:00",
   "author":{
     "@type": "Person",
     "name": "evan bueno"
@@ -153,7 +156,7 @@ Features include:
     </h1>
     <div class="post-meta">
 
-December 29, 2020&nbsp;·&nbsp;evan bueno
+December 31, 2020&nbsp;·&nbsp;evan bueno
 
     </div>
   </header> 
@@ -162,22 +165,186 @@ December 29, 2020&nbsp;·&nbsp;evan bueno
 <p><strong>GitHub</strong>: <a href="https://github.evanbueno.com">https://github.evanbueno.com</a></p>
 <p><a href="https://www.codefactor.io/repository/github/biune/minecraft-script"><img src="https://www.codefactor.io/repository/github/biune/minecraft-script/badge" alt="CodeFactor"></a></p>
 <hr>
-<h3 id="about">about:<a hidden class="anchor" aria-hidden="true" href="#about">#</a></h3>
-<p>I am currently in the works of creating a minecraft script for easy and fast mangment of minecraft servers using shell.</p>
-<p>Features include:</p>
+<h3 id="about">About<a hidden class="anchor" aria-hidden="true" href="#about">#</a></h3>
+<p>I am currently in the works of creating a minecraft script for easy and fast mangment of minecraft servers using bash.</p>
+<h3 id="features">Features<a hidden class="anchor" aria-hidden="true" href="#features">#</a></h3>
 <ol>
-<li>delete a world (rm)</li>
-<li>backup something (using zip (world/config/whole server))</li>
-<li>install a minecraft server | <em>COMING SOON</em></li>
-<li>create a start.sh file (for easy usage)</li>
-<li>startup a server (requires start.sh) | <em>COMING SOON</em></li>
-<li>run a server in screen | <em>COMING SOON</em></li>
+<li>Create Minecraft Server</li>
+<li>Backup Server (<em>in the works</em>)</li>
+<li>Create a start.sh File (<em>in the works</em>)</li>
+<li>Delete World(s) (<em>in the works</em>)</li>
+<li>Startup Server (<em>in the works</em>)</li>
 </ol>
+<p><a href="https://evanbueno.com/pages/minecraft-script/#feature-scripts"><em>Code</em></a></p>
 <hr>
-<h3 id="updates">updates:<a hidden class="anchor" aria-hidden="true" href="#updates">#</a></h3>
-<p><strong>Dec 29</strong>: added the delete world feature! // added a backup feature!</p>
-<p><strong>Dec 30</strong>: added the start.sh creator feature!</p>
+<h3 id="code">Code<a hidden class="anchor" aria-hidden="true" href="#code">#</a></h3>
+<p>Main Script:
+<code>minecraft.sh</code></p>
+<pre><code>#!/bin/bash
 
+if [ &quot;$EUID&quot; -ne 0 ]; then
+    echo &quot;Please run the script as root.&quot;
+    exit
+fi
+
+clear
+
+echo &quot;We are installing the required packages to run the script.&quot;
+sudo apt-get -y install zip unzip dialog 2&gt;/dev/null &gt;/dev/null
+
+clear
+
+HEIGHT=15
+WIDTH=40
+CHOICE_HEIGHT=5
+BACKTITLE=&quot;Verison: 1.0 Alpha Build&quot;
+TITLE=&quot;Minecraft Script&quot;
+MENU=&quot;Choose one of the following options:&quot;
+
+OPTIONS=(1 &quot;Create Minecraft Server&quot;
+    2 &quot;Backup Server&quot;
+    3 &quot;Create a start.sh File&quot;
+    4 &quot;Delete World&quot;
+    5 &quot;Startup Server&quot;)
+
+CHOICE=$(dialog --clear \
+    --backtitle &quot;$BACKTITLE&quot; \
+    --title &quot;$TITLE&quot; \
+    --menu &quot;$MENU&quot; \
+    $HEIGHT $WIDTH $CHOICE_HEIGHT \
+    &quot;${OPTIONS[@]}&quot; \
+    2&gt;&amp;1 &gt;/dev/tty)
+
+case $CHOICE in
+1)
+    clear
+    echo &quot;WARNING: This installs other script from the repository that you got this from!&quot;
+    read -r -p &quot;Do you wish to proceed? (type anything to continue or type control-c to cancel): &quot;
+    mkdir minecraft-scripts
+    cd minecraft-scripts
+    rm -rf create-minecraft-server.sh
+    wget https://raw.githubusercontent.com/Biune/minecraft-script/main/features/create-minecraft-server.sh
+    chmod +x create-minecraft-server.sh
+    ./create-minecraft-server.sh
+    ;;
+2)
+    clear
+    echo &quot;WARNING: This installs other script from the repository that you got this from!&quot;
+    read -r -p &quot;Do you wish to proceed? (type anything to continue or type control-c to cancel): &quot;
+    ;;
+3)
+    clear
+    echo &quot;WARNING: This installs other script from the repository that you got this from!&quot;
+    read -r -p &quot;Do you wish to proceed? (type anything to continue or type control-c to cancel): &quot;
+    ;;
+4)
+    clear
+    echo &quot;WARNING: This installs other script from the repository that you got this from!&quot;
+    read -r -p &quot;Do you wish to proceed? (type anything to continue or type control-c to cancel): &quot;
+    ;;
+5)
+    clear
+    echo &quot;WARNING: This installs other script from the repository that you got this from!&quot;
+    read -r -p &quot;Do you wish to proceed? (type anything to continue or type control-c to cancel): &quot;
+    ;;
+esac
+</code></pre><h3 id="feature-scripts">Feature Scripts<a hidden class="anchor" aria-hidden="true" href="#feature-scripts">#</a></h3>
+<p>Create Minecraft Server:
+<code>create-minecraft-server.sh</code></p>
+<pre><code>#!/bin/bash
+
+cd ..
+
+clear
+
+echo &quot;This creates a minecraft server from scratch. This is only meant for people that don't have ANY server files.&quot;
+echo &quot;To continue press ENTER.&quot;
+read -r
+
+clear
+
+echo &quot;Some things needed before you start.
+    1. Download link to the server .jar to start the setup!
+    2. At least 1 GB of RAM to use for the Minecraft Server.
+    3. Basic Understanding of How to Setup a Minecraft Server&quot;
+echo &quot;Do you meet the requirements?&quot;
+read -r -p &quot;Type y/N: &quot; requirements
+
+if [ &quot;$requirements&quot; == &quot;Y&quot; ] || [ &quot;$requirements&quot; == &quot;y&quot; ]; then
+    sleep 0
+else
+    echo &quot;Come back when you meet the requirements!&quot;
+    sleep 1.5
+    $(./minecraft.sh)
+fi
+clear
+mkdir minecraft-server
+cd minecraft-server
+read -r -p &quot;Enter the download link for the server.jar file: &quot; server_jar_web
+echo &quot;If this part fails then the download link doesn't work.&quot;
+sleep 1.5
+clear
+
+wget &quot;$server_jar_web&quot;
+
+echo &quot;Did it work?&quot;
+read -r -p &quot;Type y/N: &quot; did_it_work
+if [ &quot;$did_it_work&quot; == Y ] || [ &quot;$did_it_work&quot; == y ]; then
+    sleep 0
+else
+    echo &quot;That's not good. Try again later.&quot;
+    exit
+fi
+
+echo &quot;Perfect. Finding the .jar server file saved.&quot;
+server_jar_name=$(find -name *.jar)
+echo &quot;Do you want to rename $server_jar_name?&quot;
+read -r -p &quot;Type y/N: &quot; rename_question
+if [ &quot;$rename_question&quot; == Y ] || [ &quot;$rename_question&quot; == y ]; then
+    echo &quot;What do you want to rename the file to?&quot;
+    read -r -p &quot;Type here: &quot; rename
+    mv &quot;$server_jar_name&quot; &quot;$rename&quot;
+    server_jar_name=&quot;$rename&quot;
+else
+    echo &quot;Not renaming.&quot;
+fi
+
+clear
+
+echo &quot;What is the maximum ammount of ram do you want to be used when running the server?&quot;
+read -r -p &quot;Enter the number in gigabytes: &quot; ram_gb
+
+if [ -n &quot;$ram_gb&quot; ] &amp;&amp; [ &quot;$ram_gb&quot; -eq &quot;$ram_gb&quot; ] 2&gt;/dev/null; then
+    sleep 0
+else
+    echo &quot;Enter a whole number above 0 or a real number.&quot;
+    exit
+fi
+
+echo &quot;Got it!&quot;
+echo &quot;Creating start.sh.&quot;
+
+sudo touch start.sh
+sudo chmod a+x start.sh
+
+echo &quot;Writing: &quot;
+echo &quot;#!/bin/bash
+
+java -Xms&quot;$ram_gb&quot;G -Xmx&quot;$ram_gb&quot;G -jar &quot;$server_jar_name&quot;&quot; | sudo tee start.sh
+sudo chmod +x start.sh
+echo &quot;Start.sh created, starting up the server for the first time!&quot;
+
+clear
+
+./start.sh
+clear
+echo &quot;Editing eula.txt.&quot;
+sleep 1.75
+nano eula.txt
+echo &quot;Starting up the server again.&quot;
+sleep 2
+./start.sh
+</code></pre>
 </div>
   <footer class="post-footer">
   </footer>
