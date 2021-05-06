@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://evanbueno.com/</loc>
+    <lastmod>2021-05-06T18:53:19-05:00</lastmod>
+  </url><url>
+    <loc>https://evanbueno.com/posts/</loc>
+    <lastmod>2021-05-06T18:53:19-05:00</lastmod>
+  </url><url>
+    <loc>https://evanbueno.com/posts/python-solver/</loc>
+    <lastmod>2021-05-06T18:53:19-05:00</lastmod>
+  </url><url>
     <loc>https://evanbueno.com/about/me/</loc>
     <lastmod>2021-05-06T18:23:54-05:00</lastmod>
   </url><url>
     <loc>https://evanbueno.com/about/</loc>
-    <lastmod>2021-05-06T18:23:54-05:00</lastmod>
-  </url><url>
-    <loc>https://evanbueno.com/</loc>
     <lastmod>2021-05-06T18:23:54-05:00</lastmod>
   </url><url>
     <loc>https://evanbueno.com/categories/</loc>

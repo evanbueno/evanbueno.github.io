@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Evan Bueno</title>
-    <link>https://evanbueno.com/</link>
-    <description>Recent content on Evan Bueno</description>
+    <title>Posts on Evan Bueno</title>
+    <link>https://evanbueno.com/posts/</link>
+    <description>Recent content in Posts on Evan Bueno</description>
     <image>
       <url>https://evanbueno.com/</url>
       <link>https://evanbueno.com/</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 06 May 2021 18:53:19 -0500</lastBuildDate><atom:link href="https://evanbueno.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 May 2021 18:53:19 -0500</lastBuildDate><atom:link href="https://evanbueno.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python Solver</title>
       <link>https://evanbueno.com/posts/python-solver/</link>
@@ -18,15 +18,6 @@
       <guid>https://evanbueno.com/posts/python-solver/</guid>
       <description>What is it? This python script, which most likely has quite a few bugs can tell you information about a quadratic function that is in standard form! It&amp;rsquo;s able to tell you the axis of symmetry, range, y-intercept, x-intercept(s), and more.
 Why? I&amp;rsquo;m lasy and wanted something that could do my homework for me. Hopefully by putting this out there you might be able to learn from it, and cheat with it i do not condone cheating.</description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>https://evanbueno.com/about/me/</link>
-      <pubDate>Thu, 06 May 2021 18:23:54 -0500</pubDate>
-      
-      <guid>https://evanbueno.com/about/me/</guid>
-      <description>what do you want from me?</description>
     </item>
     
   </channel>
