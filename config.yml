@@ -2,6 +2,7 @@ baseURL: "https://evanbueno.com/"
 title: Evan Bueno
 paginate: 5
 theme: PaperMod
+publishDir: docs
 
 enableRobotsTXT: true
 buildDrafts: false
