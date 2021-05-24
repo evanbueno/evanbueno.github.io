@@ -5,7 +5,7 @@ draft: false
 ---
 
 ## What is it?
-This python script, which most likely has quite a few bugs can tell you information about a quadratic function that is in standard form! It's able to tell you the axis of symmetry, range, y-intercept, x-intercept(s), and more.
+This python script, which most likely has quite a few bugs can tell you information about a quadratic function that is in standard form! It's able to tell you the axis of symmetry, range, y-intercept, x-intercept(s), and more. You can see the repo [here](https://github.com/Biune/math-quadratic-solver).
 
 ## Why?
 I'm lazy and wanted something that could do my homework for me. Hopefully by putting this out there you might be able to learn from it, and cheat with it *i do not condone cheating*.
