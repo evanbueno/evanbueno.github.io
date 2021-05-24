@@ -8,7 +8,7 @@ draft: false
 This python script, which most likely has quite a few bugs can tell you information about a quadratic function that is in standard form! It's able to tell you the axis of symmetry, range, y-intercept, x-intercept(s), and more.
 
 ## Why?
-I'm lasy and wanted something that could do my homework for me. Hopefully by putting this out there you might be able to learn from it, and cheat with it *i do not condone cheating*.
+I'm lazy and wanted something that could do my homework for me. Hopefully by putting this out there you might be able to learn from it, and cheat with it *i do not condone cheating*.
 
 ## Bugs?
 I know, fork this if you really want to fix it, and then I'll accept it if it's good. Please keep in mind that this only works with **standard form** quadratic functions.
